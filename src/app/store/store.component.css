@@ -7,8 +7,9 @@
 	-ms-flex-align: center;
 	align-items: center;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0.5rem 1rem;
+	margin-top: 50px;
   }
 
   .navbar-brand {
@@ -44,15 +45,15 @@
   }
 
   .col-xl-3 {
-	-ms-flex: 0 0 25%;
-	flex: 0 0 25%;
-	max-width: 25%;
-  }
-
-  .col-xl-9 {
 	-ms-flex: 0 0 75%;
 	flex: 0 0 75%;
 	max-width: 75%;
+  }
+
+  .col-xl-9 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
   }
 
   .bg-info {
@@ -79,6 +80,7 @@
 	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	border-radius: 0.25rem;
+	margin-bottom: 15px;
   }
 
   .card-header {
@@ -86,6 +88,8 @@
 	margin-bottom: 0;
 	background-color: rgba(0, 0, 0, 0.03);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	display: flex;
+	justify-content: space-between;
   }
 
   .btn {
@@ -306,6 +310,24 @@
 	}
   }
 
+  .card-align {
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+  }
+
+  .card-align > div:last-child {
+	  align-self: flex-start;
+  }
+
+  .product-group {
+	display: flex;
+	flex-direction: column;
+  }
+
+  .product-navigation {
+	align-self: flex-end;
+  }
   
   
 
