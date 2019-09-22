@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+.btn-success {
+	color: #fff;
+	background-color: #28a745;
+	border-color: #28a745;
+  }
