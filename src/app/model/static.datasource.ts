@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core"; 
 import { Product } from "./product.model"; 
 import { Observable, from, Observer } from "rxjs"; 
+import { Order} from "./order.model";
 //import "rxjs/add/observable/from";
 
 @Injectable()
@@ -27,4 +28,9 @@ getProducts() {
 	const observer = from([this.products]);
 	return observer; 
 	}
+
+saveOrder(order: Order): Observable<Order> { //TODO change Observable into Observer if necessary
+	console.log(JSON.stringify(order));
+	return from([order]);
+}
 }

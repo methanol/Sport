@@ -4,7 +4,7 @@ import { Cart } from "../model/cart.model";
 @Component({
     selector: "cart-summary",
     //moduleId: module.id,
-    templateUrl: "cartSummary.component.html"
+    templateUrl: "cartSummary.component.html" //TODO add proper styles
 })
 
 export class CartSummaryComponent {
