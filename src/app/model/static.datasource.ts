@@ -32,5 +32,5 @@ getProducts() {
 saveOrder(order: Order): Observable<Order> { //TODO change Observable into Observer if necessary
 	console.log(JSON.stringify(order));
 	return from([order]);
-}
+	}
 }
