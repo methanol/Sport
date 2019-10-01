@@ -68,8 +68,8 @@
             </button>
         </div>
     
-        <div class="col-xl-9 pa-1 product-group">
-            <div *ngFor="let product of products" class="card">
+        <div class="col-xl-9 product-group">
+            <div *ngFor="let product of products" class="card-main">
                 <h4 class="card-header">
                     <div>
                         {{product.name}}
@@ -78,10 +78,12 @@
                         {{ product.price | currency:"USD":"symbol":"2.2-2" }}
                     </span>
                 </h4>
-                <div class="p-1">{{product.description}}</div>
-                <button class="btn btn-success" (click)="addProductToCart(product)">
-                    Add To Cart
-                </button>
+                <div class="card-detail">
+                  <div class="p-1">{{product.description}}</div>
+                  <button class="btn btn-success" (click)="addProductToCart(product)">
+                      Add To Cart
+                  </button>
+                </div>
             </div>
     
             <div class="product-navigation">

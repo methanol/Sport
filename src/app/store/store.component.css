@@ -22,15 +22,16 @@
 	-ms-flex-align: center;
 	align-items: center;
 	-ms-flex-pack: justify;
-	justify-content: center;
-	padding: 0.5rem 1rem;
-	margin-top: 50px;
+  justify-content: center;
+  flex-direction: column;
+	padding: 1.5rem 1rem;
+	margin-top: 10px;
   }
 
   .navbar-brand {
 	display: inline-block;
 	padding-top: 0.3125rem;
-	padding-bottom: 0.3125rem;
+	padding-bottom: 2rem;
 	margin-right: 1rem;
 	font-size: 1.25rem;
 	line-height: inherit;
@@ -84,27 +85,50 @@
   }
 
   .card {
-	position: relative;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	min-width: 0;
-	word-wrap: break-word;
-	background-color: #fff;
-	background-clip: border-box;
-	border: 1px solid rgba(0, 0, 0, 0.125);
-	border-radius: 0.25rem;
-	margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 40px;
+  width: 95%;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
   }
 
+  .card-main {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 15px;
+    }
+
   .card-header {
-	padding: 0.75rem 1.25rem;
-	margin-bottom: 0;
+  padding: 0.75rem 1.25rem;
+  margin: 0;
 	background-color: rgba(0, 0, 0, 0.03);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 	display: flex;
 	justify-content: space-between;
+  }
+
+  .card-detail {
+    padding: 20px 1.25rem 10px 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   .btn {
@@ -530,21 +554,7 @@
     margin-top: 16px;
   }
 
-  .card {
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 95%;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
+ 
 
   .card-container .card:not(:last-child) {
     margin-right: 0;
