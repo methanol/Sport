@@ -23,7 +23,7 @@ import { StoreFirstGuard } from "./storeFirst.guard";
       { path: "store", component: StoreComponent, canActivate: [StoreFirstGuard] },
       { path: "cart", component: CartDetailComponent, canActivate: [StoreFirstGuard] },
       { path: "checkout", component: CheckoutComponent, canActivate: [StoreFirstGuard] },
-      { path: "**", redirectTo: "/store" }
+      { path: "**", redirectTo: "/store" } // TODO move navigation to AppRoutingModule
 ])
   ],
   providers: [StoreFirstGuard],

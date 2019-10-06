@@ -33,7 +33,7 @@
 	padding-top: 0.3125rem;
 	padding-bottom: 2rem;
 	margin-right: 1rem;
-	font-size: 1.25rem;
+	font-size: 4.25rem;
 	line-height: inherit;
 	white-space: nowrap;
   }
@@ -357,6 +357,10 @@
 
   .card-align > div:last-child {
 	  align-self: flex-start;
+  }
+
+  .card-align button {
+    margin-bottom: 10px;
   }
 
   .product-group {
