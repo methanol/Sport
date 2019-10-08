@@ -6,7 +6,7 @@ import { Order } from "../model/order.model";
 @Component({
     //moduleId: module.id,
     templateUrl: "checkout.component.html",
-    styleUrls: ["checkout.component.css"] //TODO add proper styles
+    styleUrls: ["checkout.component.css", './store.component.css'] //TODO add proper styles
 })
 
 export class CheckoutComponent { 

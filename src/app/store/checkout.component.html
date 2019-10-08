@@ -1,15 +1,15 @@
-<div class="navbar navbar-inverse bg-inverse">
+<div class="navbar">
     <a class="navbar-brand">SPORTS STORE</a>
 </div>
 
-<div *ngIf="orderSent" class="m-a-1 text-xs-center">
+<div *ngIf="orderSent" class="m-1 text-center">
     <h2>Thanks!</h2>
     <p>Thanks for placing your order.</p>
     <p>We'll ship your goods as soon as possible.</p>
     <button class="btn btn-primary" routerLink="/store">Return to Store</button>
 </div>
 
-<form *ngIf="!orderSent" #form="ngForm" novalidate (ngSubmit)="submitOrder(form)" class="m-a-1">
+<form *ngIf="!orderSent" #form="ngForm" novalidate (ngSubmit)="submitOrder(form)" class="m-1">
     <div class="form-group">
         <label>Name</label>
         <input class="form-control" #name="ngModel" name="name" [(ngModel)]="order.name" required />
@@ -52,7 +52,7 @@
 			Please enter your country
 		</span>
 	</div>
-	<div class="text-xs-center">
+	<div class="text-center">
 		<button class="btn btn-secondary" routerLink="/cart">Back</button>
 		<button class="btn btn-primary" type="submit">Complete Order</button>
 	</div>
